@@ -1,0 +1,368 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>studio DIAMOND · permanentný make-up, nechty a minitattoo v Kysuckom Novom Meste — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu pre studio DIAMOND, ČSA 10, Kysucké Nové Mesto — permanentný make-up obočia, gélové nechty, riasy a obočie, minitattoo, kurzy.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Julius+Sans+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pearl:#EEEDF1; --paper:#F8F7FA; --ink:#1C1A20; --ink2:#55505C; --hair:rgba(28,26,32,.14);
+  --gold:#94703A; --gold-l:#D4B47E; --blush:#E6BFC2; --slab:#1C1A20; --slab-ink:#EDE9EF;
+  --sans:'Julius Sans One',ui-sans-serif,system-ui,sans-serif; --serif:'Gilda Display',Georgia,serif;
+  --wrap:min(1180px,100% - 40px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--pearl);color:var(--ink);font:400 18px/1.6 var(--serif);padding-bottom:env(safe-area-inset-bottom)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.lab{font:400 12px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase}
+.num{font-family:var(--sans);font-variant-numeric:tabular-nums;letter-spacing:.04em;white-space:nowrap}
+
+.notice{background:var(--ink);color:#F1EEF3;font:400 14px/1.45 var(--serif);text-align:center;padding:9px 16px}
+
+/* header */
+.top{border-bottom:1px solid var(--hair);background:var(--paper)}
+.top .wrap{display:flex;align-items:center;gap:28px;min-height:72px}
+.brand{display:flex;align-items:baseline;gap:.45em;text-decoration:none;white-space:nowrap}
+.brand i{font:400 21px var(--serif);font-style:normal;color:var(--ink2)}
+.brand b{font:400 22px var(--sans);letter-spacing:.24em}
+.top nav{display:flex;gap:24px;margin-left:auto}
+.top nav a,.tel{display:inline-flex;align-items:center;min-height:44px;font:400 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:12px 0;background:linear-gradient(currentColor,currentColor) 0 calc(100% - 8px)/0 1px no-repeat;transition:background-size .2s}
+.top nav a:hover,.tel:hover{background-size:100% 1px}
+.tel{letter-spacing:.1em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:0 24px;font:400 13px var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;color:var(--ink);background:transparent;transition:background .2s,color .2s,border-color .2s}
+.btn::before{content:"";width:7px;height:7px;flex:none;background:var(--gold);transform:rotate(45deg)}
+.btn:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.solid{background:var(--ink);color:var(--paper);border-color:var(--ink);clip-path:polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px)}
+.btn.solid::before{background:var(--gold-l)}
+.btn.solid:hover{background:var(--gold);border-color:var(--gold)}
+.btn.gold{color:var(--gold-l)}
+.btn.gold::before{background:var(--gold-l)}
+.btn.gold:hover{background:var(--gold-l);color:var(--slab)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--hair)}
+.facets{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;min-height:min(600px,82vh);padding:64px 0 56px}
+.hero h1{margin:14px 0 0;font:400 clamp(46px,7.4vw,96px)/.98 var(--sans);letter-spacing:.1em}
+.hero h1 span{display:block;font:400 clamp(30px,3.6vw,46px)/1 var(--serif);letter-spacing:0;color:var(--ink2);margin-bottom:6px}
+.lead{font-size:clamp(20px,2vw,24px);line-height:1.45;max-width:30ch;margin:26px 0 0}
+.quote{margin:22px 0 0;padding-left:18px;border-left:1px solid var(--gold);color:var(--ink2);font-size:17px;max-width:46ch}
+.quote cite{display:block;font:400 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;font-style:normal;margin-top:6px;color:var(--gold)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.facts{display:flex;flex-wrap:wrap;gap:0;margin:34px 0 0;padding:0;list-style:none;border-top:1px solid var(--hair)}
+.facts li{padding:14px 22px 0 0;margin-right:22px;border-right:1px solid var(--hair);font-size:15px;line-height:1.35;color:var(--ink2)}
+.facts li:last-child{border:0}
+.facts strong{display:block;font:400 22px var(--sans);color:var(--ink);letter-spacing:.06em}
+.gem{position:relative;justify-self:end;width:min(100%,460px)}
+.gem .cut{position:absolute;inset:-26px;width:calc(100% + 52px);height:calc(100% + 52px);color:var(--gold);opacity:.55}
+.gem figure{margin:0;position:relative;clip-path:polygon(29% 0,71% 0,100% 29%,100% 71%,71% 100%,29% 100%,0 71%,0 29%)}
+.gem figure img{width:100%;aspect-ratio:1;object-fit:cover}
+.gem figure::after{content:"";position:absolute;inset:0;background:linear-gradient(118deg,transparent 38%,rgba(255,255,255,.34) 46%,transparent 54%),linear-gradient(200deg,rgba(255,255,255,.18),transparent 40%)}
+.gem figcaption{position:absolute;right:0;bottom:-34px;font:400 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink2)}
+
+/* money block — PMU */
+.pmu{position:relative;background:var(--slab);color:var(--slab-ink);overflow:hidden}
+.pmu .wrap{position:relative;z-index:1;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;padding:88px 0}
+.pmu .lab{color:var(--gold-l)}
+.pmu h2{font:400 clamp(34px,4vw,52px)/1.08 var(--serif);margin:16px 0 18px}
+.pmu p{color:#C9C3CD;max-width:40ch;margin:0 0 14px}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;padding:15px 0;border-bottom:1px solid rgba(237,233,239,.16)}
+.list li:first-child{border-top:1px solid rgba(237,233,239,.16)}
+.list .num{font-size:20px;color:var(--gold-l)}
+.list small{display:block;font-size:14px;color:#A9A2AE}
+.note{font:400 11.5px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#A9A2AE;margin-top:18px}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}
+.trio img{width:100%;aspect-ratio:1;object-fit:cover;clip-path:polygon(50% 0,100% 38%,82% 100%,18% 100%,0 38%)}
+.trio figure{margin:0}
+.trio figcaption{font:400 10.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#A9A2AE;margin-top:8px;text-align:center}
+.pmu .ctas{margin-top:34px}
+
+/* services */
+.sec{padding:96px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:end;margin-bottom:54px}
+.sec-head h2{font:400 clamp(32px,3.8vw,48px)/1.08 var(--serif);margin:14px 0 0}
+.sec-head p{margin:0;color:var(--ink2);max-width:52ch}
+.svc{display:grid;grid-template-columns:1.25fr 1fr;gap:64px}
+.card h3{font:400 15px var(--sans);letter-spacing:.2em;text-transform:uppercase;margin:0 0 6px;padding-bottom:12px;border-bottom:1px solid var(--ink)}
+.card h4{font:400 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:22px 0 4px}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--hair);font-size:17px;line-height:1.35}
+.rows .num{font-size:16px}
+.card+.card{margin-top:46px}
+.nails{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.nails img{width:100%;aspect-ratio:1;object-fit:cover;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);transition:transform .5s}
+.nails img:hover{transform:scale(1.045)}
+.nails :nth-child(even){margin-top:46px}
+.tat{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-top:20px}
+.tat img{clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
+.tat p{margin:0;font-size:15px;color:var(--ink2)}
+
+/* courses */
+.kurzy{background:var(--paper);border-block:1px solid var(--hair)}
+.tags{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;list-style:none;margin:0;padding:0}
+.tags li{position:relative;background:var(--pearl);padding:34px 20px 26px;clip-path:polygon(18px 0,calc(100% - 18px) 0,100% 18px,100% 100%,0 100%,0 18px);min-height:190px;display:flex;flex-direction:column}
+.tags li::before{content:"";position:absolute;left:18px;right:18px;top:0;height:1px;background:var(--gold)}
+.tags h3{font:400 19px/1.25 var(--serif);margin:0 0 auto}
+.tags .num{font-size:24px;margin-top:22px;display:block}
+.tags small{font-size:13px;color:var(--ink2);line-height:1.35;margin-top:6px}
+.fbq{margin:44px 0 0;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;max-width:880px}
+.fbq blockquote{margin:0;font-size:20px;line-height:1.5}
+.fbq .lab{color:var(--gold);padding-top:7px}
+
+/* studio */
+.studio .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.wall{margin:0;position:relative;max-width:520px}
+.wall img{width:100%;clip-path:polygon(0 0,88% 0,100% 14%,100% 100%,12% 100%,0 86%)}
+.wall figcaption{font:400 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink2);margin-top:10px}
+.studio h2{font:400 clamp(32px,3.8vw,48px)/1.1 var(--serif);margin:14px 0 18px}
+.studio p{color:var(--ink2);margin:0 0 14px;max-width:46ch}
+.studio blockquote{margin:22px 0;font-size:20px;line-height:1.45;max-width:36ch}
+.studio blockquote small{display:block;font:400 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:8px}
+
+/* contact */
+.contact{position:relative;overflow:hidden;border-top:1px solid var(--hair)}
+.contact .wrap{position:relative;z-index:1;padding:88px 0 96px}
+.contact h2{font:400 clamp(34px,4.4vw,56px)/1.05 var(--sans);letter-spacing:.08em;margin:12px 0 44px}
+.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink)}
+.cgrid>div{padding:22px 24px 8px 0;margin-right:24px;border-right:1px solid var(--hair)}
+.cgrid>div:last-child{border:0;margin:0}
+.cgrid .lab{color:var(--gold);margin-bottom:10px}
+.cgrid p{margin:0 0 8px;font-size:17px;line-height:1.45}
+.cgrid small{display:block;font-size:14px;color:var(--ink2);line-height:1.4}
+.cgrid .big{font:400 52px/1 var(--sans);letter-spacing:.04em;margin:2px 0 10px}
+.links{list-style:none;margin:0;padding:0}
+.links a{display:inline-flex;align-items:center;min-height:44px;padding:0;font-size:17px;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 calc(100% - 4px)/0 1px no-repeat;transition:background-size .2s}
+.links a:hover{background-size:100% 1px}
+footer{background:var(--ink);color:#BDB6C2;font:400 15px var(--serif);text-align:center;padding:26px 16px calc(26px + env(safe-area-inset-bottom))}
+
+.mbar{display:none}
+@media (max-width:980px){
+  .top nav{display:none}
+  .hero .wrap,.pmu .wrap,.studio .wrap,.sec-head,.svc{grid-template-columns:1fr;gap:40px}
+  .gem{justify-self:center;width:min(100%,400px);margin:10px auto 40px}
+  .tags{grid-template-columns:repeat(2,1fr)}
+  .cgrid{grid-template-columns:1fr 1fr}
+  .cgrid>div:nth-child(2){border:0;margin-right:0}
+  .cgrid>div:nth-child(n+3){border-top:1px solid var(--hair)}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  footer{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
+  :root{--wrap:calc(100% - 40px)}
+  .top .wrap{min-height:60px;gap:12px}
+  .brand b{font-size:18px;letter-spacing:.18em}.brand i{font-size:18px}
+  .top .btn{display:none}
+  .tel{margin-left:auto;font-size:12px}
+  .hero .wrap{padding:44px 0 40px;min-height:0}
+  .hero h1{letter-spacing:.06em}
+  .facts li{border:0;padding-right:0;margin-right:26px}
+  .sec,.pmu .wrap{padding:64px 0}
+  .trio{gap:8px}
+  .nails{grid-template-columns:repeat(2,1fr);gap:8px}
+  .nails :nth-child(even){margin-top:34px}
+  .nails :nth-child(n+3){margin-top:-30px}
+  .nails :nth-child(4){margin-top:4px}
+  .tags{grid-template-columns:1fr 1fr;gap:10px}
+  .tags li{min-height:0;padding:28px 14px 18px}
+  .tags li:last-child{grid-column:1/-1}
+  .tags h3{font-size:17px}.tags .num{font-size:20px}
+  .fbq{grid-template-columns:1fr;gap:6px}
+  .cgrid{grid-template-columns:1fr}
+  .cgrid>div{border:0!important;border-top:1px solid var(--hair)!important;margin:0;padding-right:0}
+  .cgrid>div:first-child{border-top:0!important}
+  .tat{grid-template-columns:110px 1fr}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(248,247,250,.97);border-top:1px solid var(--hair)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;font:400 13px var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink)}
+  .mbar a:first-child{background:var(--ink);color:var(--paper)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="notice">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="studio DIAMOND — úvod"><i>studio</i><b>DIAMOND</b></a>
+    <nav aria-label="Hlavná navigácia"><a href="#pmu">Permanentný make-up</a><a href="#sluzby">Služby</a><a href="#kurzy">Kurzy</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="tel num" href="tel:+421904329962">0904 329 962</a>
+    <a class="btn" href="https://www.notino.sk/salony/diamond-studio_1/" rel="noopener">Rezervovať</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <svg class="facets" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0,0 L115,0 L127,94Z" fill="#efeef2"/><path d="M0,0 L127,94 L0,91Z" fill="#f0eff3"/><path d="M115,0 L231,0 L225,132Z" fill="#edecf0"/><path d="M115,0 L225,132 L127,94Z" fill="#ebeaee"/><path d="M231,0 L415,0 L433,100Z" fill="#ebeaee"/><path d="M231,0 L433,100 L225,132Z" fill="#efeef2"/><path d="M415,0 L490,0 L505,154Z" fill="#edecf0"/><path d="M415,0 L505,154 L433,100Z" fill="#ebeaee"/><path d="M490,0 L670,0 L505,154Z" fill="#f0eff3"/><path d="M670,0 L712,148 L505,154Z" fill="#f0eff3"/><path d="M670,0 L786,0 L790,191Z" fill="#edecf0"/><path d="M670,0 L790,191 L712,148Z" fill="#f0eff3"/><path d="M786,0 L889,0 L887,178Z" fill="#ecebef"/><path d="M786,0 L887,178 L790,191Z" fill="#efeef2"/><path d="M889,0 L1067,0 L1045,102Z" fill="#ecebef"/><path d="M889,0 L1045,102 L887,178Z" fill="#efeef2"/><path d="M1067,0 L1200,0 L1045,102Z" fill="#f2f1f5"/><path d="M1200,0 L1200,99 L1045,102Z" fill="#f4f3f7"/><path d="M0,91 L127,94 L165,246Z" fill="#f0eff3"/><path d="M0,91 L165,246 L0,260Z" fill="#f0eff3"/><path d="M127,94 L225,132 L275,295Z" fill="#edecf0"/><path d="M127,94 L275,295 L165,246Z" fill="#eeedf1"/><path d="M225,132 L433,100 L387,285Z" fill="#ecebef"/><path d="M225,132 L387,285 L275,295Z" fill="#edecf0"/><path d="M433,100 L505,154 L489,233Z" fill="#ebeaee"/><path d="M433,100 L489,233 L387,285Z" fill="#ebdfe2"/><path d="M505,154 L712,148 L489,233Z" fill="#eeedf1"/><path d="M712,148 L637,299 L489,233Z" fill="#edecf0"/><path d="M712,148 L790,191 L793,260Z" fill="#eeedf1"/><path d="M712,148 L793,260 L637,299Z" fill="#f4f3f7"/><path d="M790,191 L887,178 L942,275Z" fill="#f1f0f4"/><path d="M790,191 L942,275 L793,260Z" fill="#f3f2f6"/><path d="M887,178 L1045,102 L942,275Z" fill="#eee2e6"/><path d="M1045,102 L1046,311 L942,275Z" fill="#f7f6fa"/><path d="M1045,102 L1200,99 L1200,301Z" fill="#f0e4e7"/><path d="M1045,102 L1200,301 L1046,311Z" fill="#f2f1f5"/><path d="M0,260 L165,246 L0,393Z" fill="#efeef2"/><path d="M165,246 L141,423 L0,393Z" fill="#edecf0"/><path d="M165,246 L275,295 L141,423Z" fill="#eeedf1"/><path d="M275,295 L305,444 L141,423Z" fill="#ecebef"/><path d="M275,295 L387,285 L305,444Z" fill="#f0eff3"/><path d="M387,285 L379,471 L305,444Z" fill="#f2f1f5"/><path d="M387,285 L489,233 L379,471Z" fill="#edecf0"/><path d="M489,233 L495,411 L379,471Z" fill="#ede1e4"/><path d="M489,233 L637,299 L693,383Z" fill="#f0eff3"/><path d="M489,233 L693,383 L495,411Z" fill="#f3f2f6"/><path d="M637,299 L793,260 L799,371Z" fill="#f7f6fa"/><path d="M637,299 L799,371 L693,383Z" fill="#f8f7fb"/><path d="M793,260 L942,275 L950,448Z" fill="#f1f0f4"/><path d="M793,260 L950,448 L799,371Z" fill="#f0eff3"/><path d="M942,275 L1046,311 L950,448Z" fill="#f2f1f5"/><path d="M1046,311 L1074,460 L950,448Z" fill="#eeedf1"/><path d="M1046,311 L1200,301 L1200,400Z" fill="#eeedf1"/><path d="M1046,311 L1200,400 L1074,460Z" fill="#efeef2"/><path d="M0,393 L141,423 L153,560Z" fill="#ecebef"/><path d="M0,393 L153,560 L0,560Z" fill="#edecf0"/><path d="M141,423 L305,444 L153,560Z" fill="#efeef2"/><path d="M305,444 L276,560 L153,560Z" fill="#f5f4f8"/><path d="M305,444 L379,471 L408,560Z" fill="#f2f1f5"/><path d="M305,444 L408,560 L276,560Z" fill="#f7f6fa"/><path d="M379,471 L495,411 L529,560Z" fill="#f7f6fa"/><path d="M379,471 L529,560 L408,560Z" fill="#f5f4f8"/><path d="M495,411 L693,383 L529,560Z" fill="#eee2e6"/><path d="M693,383 L701,560 L529,560Z" fill="#f3f2f6"/><path d="M693,383 L799,371 L701,560Z" fill="#f4f3f7"/><path d="M799,371 L845,560 L701,560Z" fill="#f0eff3"/><path d="M799,371 L950,448 L931,560Z" fill="#ecebef"/><path d="M799,371 L931,560 L845,560Z" fill="#ecebef"/><path d="M950,448 L1074,460 L1083,560Z" fill="#edecf0"/><path d="M950,448 L1083,560 L931,560Z" fill="#f0eff3"/><path d="M1074,460 L1200,400 L1200,560Z" fill="#eeedf1"/><path d="M1074,460 L1200,560 L1083,560Z" fill="#edecf0"/></svg>
+  <div class="wrap">
+    <div>
+      <p class="lab">Kysucké Nové Mesto · ČSA 10 · na objednanie</p>
+      <h1><span>studio</span>DIAMOND</h1>
+      <p class="lead">Permanentný make-up obočia, gélové nechty, riasy a&nbsp;minitattoo. Aj kurzy a&nbsp;individuálne školenia.</p>
+      <blockquote class="quote">„Studio DIAMOND ponúka profesionálny prístup v permanentnom makeupe obočia rôznymi technikami.“<cite>Popis štúdia na Notino</cite></blockquote>
+      <div class="ctas">
+        <a class="btn solid" href="tel:+421904329962">Zavolať 0904 329 962</a>
+        <a class="btn" href="https://www.notino.sk/salony/diamond-studio_1/" rel="noopener">Termín cez Notino</a>
+      </div>
+      <ul class="facts">
+        <li><strong class="num">5,0 ★</strong>82 hodnotení na Notino<br>(1. 10. 2026)</li>
+        <li><strong>1. poschodie</strong>oranžová budova, ČSA 10</li>
+      </ul>
+    </div>
+    <div class="gem">
+      <svg class="cut" viewBox="-4 -4 208 208" aria-hidden="true"><path d="M121.4,48.3 L151.7,78.6 L151.7,121.4 L121.4,151.7 L78.6,151.7 L48.3,121.4 L48.3,78.6 L78.6,48.3Z M78.6,48.3 L100.0,20.0 L121.4,48.3 M100.0,20.0 L100.0,0.0 M121.4,48.3 L138.3,7.6 M100.0,20.0 L61.7,7.6 M100.0,20.0 L138.3,7.6 M121.4,48.3 L156.6,43.4 L151.7,78.6 M156.6,43.4 L170.7,29.3 M151.7,78.6 L192.4,61.7 M156.6,43.4 L138.3,7.6 M156.6,43.4 L192.4,61.7 M151.7,78.6 L180.0,100.0 L151.7,121.4 M180.0,100.0 L200.0,100.0 M151.7,121.4 L192.4,138.3 M180.0,100.0 L192.4,61.7 M180.0,100.0 L192.4,138.3 M151.7,121.4 L156.6,156.6 L121.4,151.7 M156.6,156.6 L170.7,170.7 M121.4,151.7 L138.3,192.4 M156.6,156.6 L192.4,138.3 M156.6,156.6 L138.3,192.4 M121.4,151.7 L100.0,180.0 L78.6,151.7 M100.0,180.0 L100.0,200.0 M78.6,151.7 L61.7,192.4 M100.0,180.0 L138.3,192.4 M100.0,180.0 L61.7,192.4 M78.6,151.7 L43.4,156.6 L48.3,121.4 M43.4,156.6 L29.3,170.7 M48.3,121.4 L7.6,138.3 M43.4,156.6 L61.7,192.4 M43.4,156.6 L7.6,138.3 M48.3,121.4 L20.0,100.0 L48.3,78.6 M20.0,100.0 L0.0,100.0 M48.3,78.6 L7.6,61.7 M20.0,100.0 L7.6,138.3 M20.0,100.0 L7.6,61.7 M48.3,78.6 L43.4,43.4 L78.6,48.3 M43.4,43.4 L29.3,29.3 M78.6,48.3 L61.7,7.6 M43.4,43.4 L7.6,61.7 M43.4,43.4 L61.7,7.6 M100.0,0.0 L138.3,7.6 L170.7,29.3 L192.4,61.7 L200.0,100.0 L192.4,138.3 L170.7,170.7 L138.3,192.4 L100.0,200.0 L61.7,192.4 L29.3,170.7 L7.6,138.3 L0.0,100.0 L7.6,61.7 L29.3,29.3 L61.7,7.6Z" fill="none" stroke="currentColor" stroke-width=".45"/></svg>
+      <figure><img src="assets/oko-permanentny-make-up-obocia.webp" width="460" height="460" alt="Detail oka a obočia po permanentnom make-upe, zo stránky štúdia na Facebooku" fetchpriority="high"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pmu" id="pmu" aria-labelledby="pmu-h">
+  <svg class="facets" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0,0 L145,0 L0,177Z" fill="#211f25"/><path d="M145,0 L165,214 L0,177Z" fill="#1c1a20"/><path d="M145,0 L307,0 L254,149Z" fill="#211f25"/><path d="M145,0 L254,149 L165,214Z" fill="#1f1d23"/><path d="M307,0 L498,0 L403,216Z" fill="#201e24"/><path d="M307,0 L403,216 L254,149Z" fill="#201e24"/><path d="M498,0 L596,0 L622,114Z" fill="#1c1a20"/><path d="M498,0 L622,114 L403,216Z" fill="#222026"/><path d="M596,0 L751,0 L805,237Z" fill="#222026"/><path d="M596,0 L805,237 L622,114Z" fill="#1e1c22"/><path d="M751,0 L910,0 L805,237Z" fill="#1b191f"/><path d="M910,0 L918,190 L805,237Z" fill="#1f1d23"/><path d="M910,0 L1014,0 L918,190Z" fill="#1e1c22"/><path d="M1014,0 L1011,110 L918,190Z" fill="#1f1d23"/><path d="M1014,0 L1200,0 L1011,110Z" fill="#201e24"/><path d="M1200,0 L1200,179 L1011,110Z" fill="#252329"/><path d="M0,177 L165,214 L0,291Z" fill="#1e1c22"/><path d="M165,214 L115,316 L0,291Z" fill="#211f25"/><path d="M165,214 L254,149 L246,345Z" fill="#222026"/><path d="M165,214 L246,345 L115,316Z" fill="#1c1a20"/><path d="M254,149 L403,216 L246,345Z" fill="#222026"/><path d="M403,216 L443,396 L246,345Z" fill="#222026"/><path d="M403,216 L622,114 L443,396Z" fill="#1e1c22"/><path d="M622,114 L602,369 L443,396Z" fill="#1b191f"/><path d="M622,114 L805,237 L750,372Z" fill="#232127"/><path d="M622,114 L750,372 L602,369Z" fill="#242228"/><path d="M805,237 L918,190 L895,320Z" fill="#232127"/><path d="M805,237 L895,320 L750,372Z" fill="#232127"/><path d="M918,190 L1011,110 L895,320Z" fill="#28262c"/><path d="M1011,110 L1107,416 L895,320Z" fill="#252329"/><path d="M1011,110 L1200,179 L1200,395Z" fill="#222026"/><path d="M1011,110 L1200,395 L1107,416Z" fill="#232127"/><path d="M0,291 L115,316 L129,489Z" fill="#1d1b21"/><path d="M0,291 L129,489 L0,553Z" fill="#1c1a20"/><path d="M115,316 L246,345 L129,489Z" fill="#222026"/><path d="M246,345 L276,468 L129,489Z" fill="#201e24"/><path d="M246,345 L443,396 L480,512Z" fill="#40352b"/><path d="M246,345 L480,512 L276,468Z" fill="#222026"/><path d="M443,396 L602,369 L480,512Z" fill="#1f1d23"/><path d="M602,369 L640,510 L480,512Z" fill="#26242a"/><path d="M602,369 L750,372 L802,571Z" fill="#2c2a30"/><path d="M602,369 L802,571 L640,510Z" fill="#28262c"/><path d="M750,372 L895,320 L802,571Z" fill="#28262c"/><path d="M895,320 L843,486 L802,571Z" fill="#26242a"/><path d="M895,320 L1107,416 L1097,521Z" fill="#222026"/><path d="M895,320 L1097,521 L843,486Z" fill="#252329"/><path d="M1107,416 L1200,395 L1097,521Z" fill="#211f25"/><path d="M1200,395 L1200,589 L1097,521Z" fill="#1f1d23"/><path d="M0,553 L129,489 L0,700Z" fill="#1f1d23"/><path d="M129,489 L138,700 L0,700Z" fill="#211f25"/><path d="M129,489 L276,468 L138,700Z" fill="#211f25"/><path d="M276,468 L251,700 L138,700Z" fill="#252329"/><path d="M276,468 L480,512 L465,700Z" fill="#28262c"/><path d="M276,468 L465,700 L251,700Z" fill="#493e33"/><path d="M480,512 L640,510 L465,700Z" fill="#27252b"/><path d="M640,510 L632,700 L465,700Z" fill="#252329"/><path d="M640,510 L802,571 L632,700Z" fill="#26242a"/><path d="M802,571 L724,700 L632,700Z" fill="#1b191f"/><path d="M802,571 L843,486 L724,700Z" fill="#1e1c22"/><path d="M843,486 L853,700 L724,700Z" fill="#222026"/><path d="M843,486 L1097,521 L1031,700Z" fill="#222026"/><path d="M843,486 L1031,700 L853,700Z" fill="#201e24"/><path d="M1097,521 L1200,589 L1200,700Z" fill="#211f25"/><path d="M1097,521 L1200,700 L1031,700Z" fill="#222026"/></svg>
+  <div class="wrap">
+    <div>
+      <p class="lab">Hlavná služba štúdia</p>
+      <h2 id="pmu-h">Permanentný make-up obočia</h2>
+      <p>Microblading so shadingom, powder brows a hairstroke. V cenníku je aj konzultácia a korekcia permanentného make-upu.</p>
+      <div class="trio">
+        <figure><img src="assets/obocie-tvarovane-detail.webp" width="315" height="315" alt="Tvarované obočie nad hnedým okom" loading="lazy"><figcaption>Obočie</figcaption></figure>
+        <figure><img src="assets/riasy-a-obocie-detail.webp" width="315" height="315" alt="Detail rias a obočia" loading="lazy"><figcaption>Riasy a obočie</figcaption></figure>
+        <figure><img src="assets/oko-riasy-obocie.webp" width="315" height="315" alt="Oko s riasami a obočím zblízka" loading="lazy"><figcaption>Detail</figcaption></figure>
+      </div>
+    </div>
+    <div>
+      <ul class="list">
+        <li><span>Microblading + shading</span><span class="num">220 €</span></li>
+        <li><span>Powder brows</span><span class="num">220 €</span></li>
+        <li><span>Hairstroke</span><span class="num">220 €</span></li>
+        <li><span>Korekcia permanentného make-upu</span><span class="num">50 – 170 €</span></li>
+        <li><span>Konzultácia</span><span class="num">15 €</span></li>
+      </ul>
+      <p class="note">Ceny podľa profilu na Notino (1. 10. 2026), overiť</p>
+      <div class="ctas">
+        <a class="btn gold" href="tel:+421904329962">Dohodnúť konzultáciu</a>
+        <a class="btn gold" href="https://www.notino.sk/salony/diamond-studio_1/" rel="noopener">Profil na Notino</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sluzby" aria-labelledby="sl-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="lab">Ďalšie služby</p><h2 id="sl-h">Nechty, riasy, obočie a&nbsp;tetovanie</h2></div>
+      <p>Celá ponuka štúdia na jednom mieste, s&nbsp;cenami tak, ako sú uvedené na profile v&nbsp;Notino.</p>
+    </div>
+    <div class="svc">
+      <div class="card">
+        <h3>Nechty</h3>
+        <h4>Modeláž nechtov</h4>
+        <ul class="rows">
+          <li><span>Nové nechty gélové</span><span class="num">45 – 50 €</span></li>
+          <li><span>Doplnenie gélových nechtov</span><span class="num">37 – 39 €</span></li>
+          <li><span>Zdobenie nechtov</span><span class="num">3 – 5 €</span></li>
+          <li><span>Oprava zlomeného nechtu</span><span class="num">3 – 5 €</span></li>
+        </ul>
+        <h4>Manikúra</h4>
+        <ul class="rows">
+          <li><span>Lakovanie nechtov gél lakom</span><span class="num">30 – 35 €</span></li>
+          <li><span>Suchá manikúra bez lakovania</span><span class="num">12 €</span></li>
+          <li><span>Odstránenie nechtov + suchá manikúra</span><span class="num">17 €</span></li>
+        </ul>
+        <div class="nails">
+          <img src="assets/nechty-ruzove-ombre.webp" width="315" height="315" alt="Ružové gélové nechty s ombré" loading="lazy">
+          <img src="assets/nechty-francuzske-trblietky.webp" width="315" height="315" alt="Francúzske nechty s trblietkami" loading="lazy">
+          <img src="assets/nechty-ruzove-s-maslickou.webp" width="315" height="315" alt="Ružové nechty so zdobením mašličkou" loading="lazy">
+          <img src="assets/nechty-mliecna-francuzska.webp" width="315" height="315" alt="Mliečne nechty s bielou francúzskou špičkou" loading="lazy">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Riasy a obočie</h3>
+          <ul class="rows">
+            <li><span>Laminácia obočia</span><span class="num">35 €</span></li>
+            <li><span>Úprava a farbenie obočia</span><span class="num">17 €</span></li>
+            <li><span>Lash Lifting</span><span class="num">35 €</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tetovanie</h3>
+          <ul class="rows">
+            <li><span>Tetovanie strojčekom</span><span class="num">40 – 100 €</span></li>
+            <li><span>Konzultácia</span><span class="num">15 €</span></li>
+          </ul>
+          <div class="tat"><img src="assets/minitattoo-predlaktie.webp" width="225" height="205" alt="Dve malé tetovania na predlaktiach" loading="lazy"><p>Minitattoo — drobné motívy, napríklad na predlaktie. Fotka zo stránky štúdia na Facebooku.</p></div>
+        </div>
+        <div class="card">
+          <h3>Ošetrenie a líčenie</h3>
+          <ul class="rows">
+            <li><span>Relaxačné ošetrenie</span><span class="num">35 €</span></li>
+            <li><span>Večerné líčenie</span><span class="num">30 €</span></li>
+          </ul>
+        </div>
+        <p class="note" style="color:var(--ink2)">Ceny podľa profilu na Notino (1. 10. 2026), overiť</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec kurzy" id="kurzy" aria-labelledby="ku-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="lab">Pre tých, čo sa chcú naučiť</p><h2 id="ku-h">Kurzy a&nbsp;individuálne školenia</h2></div>
+      <p>Štúdio ponúka aj kurzy — od modeláže nechtov po permanentný make-up. Na Facebooku uvádza aj individuálne školenia.</p>
+    </div>
+    <ul class="tags">
+      <li><h3>Kurz permanentného make-upu</h3><span class="num">450 €</span></li>
+      <li><h3>Kurz minitattoo</h3><span class="num">550 €</span></li>
+      <li><h3>Kurz modeláže nechtov</h3><span class="num">150 – 350 €</span><small>rezervácia telefonicky</small></li>
+      <li><h3>Kurz lash liftingu</h3><span class="num">250 €</span></li>
+      <li><h3>Kurz laminácie obočia</h3><span class="num">250 €</span></li>
+    </ul>
+    <p class="note" style="color:var(--ink2)">Ceny podľa profilu na Notino (1. 10. 2026), overiť</p>
+    <div class="fbq">
+      <span class="lab">Na Facebooku</span>
+      <blockquote>„Ponuka služieb PMU tetovanie obočia, MiniTATTOO, Gélové nechty, polyakrygel, Géllak<br>Kurzy, individ.školenia, Lashlift, Laminácia obočia, Relaxačná masáž dekolt, krk, tvár“</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sec studio" aria-labelledby="st-h">
+  <div class="wrap">
+    <figure class="wall"><img src="assets/zlaty-napis-studia.webp" width="480" height="400" alt="Zlatý nápis DIAMOND studio na stene štúdia so zoznamom služieb" loading="lazy"><figcaption>Nápis v štúdiu · foto z Facebooku</figcaption></figure>
+    <div>
+      <p class="lab">Ako nás nájsť</p>
+      <h2 id="st-h">Na prvom poschodí oranžovej budovy</h2>
+      <blockquote>„Oranžová budova oproti čínskemu múru … mňa nájdete na 1 poschodí“<small>Popis cesty z Facebooku štúdia</small></blockquote>
+      <p>ČSA 10 (na Facebooku ČSA 83/10), 024 04 Kysucké Nové Mesto. Prichádza sa na objednaný termín.</p>
+      <div class="ctas"><a class="btn" href="https://www.google.com/maps/search/studio+DIAMOND+Kysuck%C3%A9+Nov%C3%A9+Mesto" rel="noopener">Otvoriť v Mapách</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt" aria-labelledby="ko-h">
+  <svg class="facets" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0,0 L227,0 L0,143Z" fill="#ebeaee"/><path d="M227,0 L123,107 L0,143Z" fill="#eae9ed"/><path d="M227,0 L401,0 L336,110Z" fill="#eae9ed"/><path d="M227,0 L336,110 L123,107Z" fill="#ecebef"/><path d="M401,0 L565,0 L336,110Z" fill="#f0eff3"/><path d="M565,0 L508,89 L336,110Z" fill="#ecebef"/><path d="M565,0 L631,0 L632,162Z" fill="#ecebef"/><path d="M565,0 L632,162 L508,89Z" fill="#ecebef"/><path d="M631,0 L869,0 L632,162Z" fill="#eeedf1"/><path d="M869,0 L847,141 L632,162Z" fill="#ecebef"/><path d="M869,0 L1019,0 L1059,125Z" fill="#f2f1f5"/><path d="M869,0 L1059,125 L847,141Z" fill="#f3f2f6"/><path d="M1019,0 L1200,0 L1059,125Z" fill="#f0eff3"/><path d="M1200,0 L1200,93 L1059,125Z" fill="#f6f5f9"/><path d="M0,143 L123,107 L0,310Z" fill="#eeedf1"/><path d="M123,107 L183,297 L0,310Z" fill="#f1f0f4"/><path d="M123,107 L336,110 L359,330Z" fill="#f1f0f4"/><path d="M123,107 L359,330 L183,297Z" fill="#eae9ed"/><path d="M336,110 L508,89 L496,308Z" fill="#eae9ed"/><path d="M336,110 L496,308 L359,330Z" fill="#f1f0f4"/><path d="M508,89 L632,162 L496,308Z" fill="#f2f1f5"/><path d="M632,162 L669,288 L496,308Z" fill="#f6f5f9"/><path d="M632,162 L847,141 L669,288Z" fill="#f3f2f6"/><path d="M847,141 L878,260 L669,288Z" fill="#faf9fd"/><path d="M847,141 L1059,125 L878,260Z" fill="#f5f4f8"/><path d="M1059,125 L975,277 L878,260Z" fill="#f6f5f9"/><path d="M1059,125 L1200,93 L1200,303Z" fill="#efeef2"/><path d="M1059,125 L1200,303 L975,277Z" fill="#ecebef"/><path d="M0,310 L183,297 L183,420Z" fill="#ebeaee"/><path d="M0,310 L183,420 L0,420Z" fill="#f2f1f5"/><path d="M183,297 L359,330 L183,420Z" fill="#eeedf1"/><path d="M359,330 L336,420 L183,420Z" fill="#f1f0f4"/><path d="M359,330 L496,308 L336,420Z" fill="#f2f1f5"/><path d="M496,308 L533,420 L336,420Z" fill="#f5f4f8"/><path d="M496,308 L669,288 L533,420Z" fill="#f3f2f6"/><path d="M669,288 L644,420 L533,420Z" fill="#f1f0f4"/><path d="M669,288 L878,260 L644,420Z" fill="#f2f1f5"/><path d="M878,260 L815,420 L644,420Z" fill="#edecf0"/><path d="M878,260 L975,277 L815,420Z" fill="#f1f0f4"/><path d="M975,277 L1006,420 L815,420Z" fill="#f1f0f4"/><path d="M975,277 L1200,303 L1006,420Z" fill="#edecf0"/><path d="M1200,303 L1200,420 L1006,420Z" fill="#efeef2"/></svg>
+  <div class="wrap">
+    <p class="lab">Kontakt</p>
+    <h2 id="ko-h">Termín si dohodnite</h2>
+    <div class="cgrid">
+      <div><p class="lab">Telefón</p><p><a class="num" href="tel:+421904329962" style="font-size:22px;text-decoration:none">0904 329 962</a></p><small>alebo rezervácia cez Notino</small></div>
+      <div><p class="lab">Adresa</p><p>ČSA 10<br>024 04 Kysucké Nové Mesto</p><small>1. poschodie</small></div>
+      <div><p class="lab">Hodiny</p><p>Na objednanie</p><small>podľa Notino; konkrétne hodiny overiť</small></div>
+      <div><p class="lab">Hodnotenie</p><p class="big">5,0</p><small>82 hodnotení na Notino, 1. 10. 2026</small></div>
+    </div>
+    <ul class="links" style="display:flex;flex-wrap:wrap;gap:6px 28px;margin-top:34px">
+      <li><a href="https://www.notino.sk/salony/diamond-studio_1/" rel="noopener">Notino — profil a rezervácia</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=100054384137233" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.instagram.com/jankadupkalova" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.google.com/maps/search/studio+DIAMOND+Kysuck%C3%A9+Nov%C3%A9+Mesto" rel="noopener">Google Mapy</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>Neoficiálny návrh webu · webdavid.sk · 2026</footer>
+<nav class="mbar" aria-label="Rýchle akcie"><a href="tel:+421904329962">Zavolať</a><a href="https://www.notino.sk/salony/diamond-studio_1/" rel="noopener">Rezervovať</a></nav>
